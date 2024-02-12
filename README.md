@@ -1,17 +1,17 @@
 # P2P-file-sharing
 
-Computer Networks - Project
+## Computer Networks - Project
 Group Members: Nandani Yadav, Shaanya Singh, Shashi Shirupa 
 
 
-Project details
-    1. Implementation of a P2P file-sharing software similar to BitTorrent.
-    2. Establishing connection using TCP, which is a reliable transport protocol.
+## Project details
+    * Implementation of a P2P file-sharing software similar to BitTorrent.
+    * Establishing connection using TCP, which is a reliable transport protocol.
 
-Protocol Description
+## Protocol Description
 The protocol is structured with an initial handshake, succeeded by an uninterrupted flow of messages that are prefixed with their respective lengths. When two peers establish a connection, they exchange handshake messages before proceeding to send any other types of messages.
 
-##Implementation
+## Implementation
     Initializing the peer process: 
         * Create both config files - Common.cfg & PeerInfo.cfg
         * Each peer accesses the config file that includes information about the file to be distributed, its size, intervals for   choking and unchoking, and the count of preferred neighbors.
